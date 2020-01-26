@@ -26,7 +26,7 @@ python preprocess_laptop_reviews.py --minlen=20 --maxlen=100 --maxitem=100 --pri
 For test, here minlen/maxlen mean the min/max length of reviews, maxitem means the max number of items, print_count means the number of reviews every print.
 
 ## Reading Comprehension
-To predict the answer when given the file `data/test.json` containing questiones reviews. The output file is `output/predictions.json`
+To predict the answer when given the file `data/test.json` containing questiones and reviews. The output file is `output/predictions.json`
 ```
 bash run_rrc_test.sh 0
 ```
