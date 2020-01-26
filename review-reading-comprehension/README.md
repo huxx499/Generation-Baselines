@@ -19,11 +19,11 @@ gzip -d meta_Electronics.json.gz
 python preprocess.py --file=meta_Electronics.json --mode=des
 ```
 
-Step 3 To generate RRC data in json format by preprocessing the csv data. The output file is `data/test.json`
+Step 3 Download our fine-tuned BERT weights [model.pt](https://pan.baidu.com/s/1x4fhWjqOqTxcrEuIWce_Iw) (code:k5wj) to `output/`, BERT-base model [pytorch_model.bin](https://pan.baidu.com/s/16fDUOV__WrLRUKNyhc0_7w) (code:qs3k) to `pt_model/bert-base/`  To generate RRC data in json format by preprocessing the csv data. The output file is `data/test.json`
 ```
 python preprocess_laptop_reviews.py --minlen=20 --maxlen=100 --maxitem=100 --print_count=1000
 ```
-Here minlen/maxlen mean the min/max length of reviews, maxitem means the number of items, print_count means the number of reviews every print.
+For test, here minlen/maxlen mean the min/max length of reviews, maxitem means the max number of items, print_count means the number of reviews every print.
 
 ## Reading Comprehension
 To predict the answer when given a question and a review. The output file is `output/predictions.json`

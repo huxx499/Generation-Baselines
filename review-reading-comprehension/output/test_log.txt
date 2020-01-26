@@ -1,0 +1,5 @@
+01/25/2020 13:04:27 - INFO - pytorch_pretrained_bert.tokenization -   loading vocabulary file ./pt_model/bert-base/vocab.txt
+01/25/2020 13:04:38 - INFO - __main__ -   ***** Running evaluation *****
+01/25/2020 13:04:38 - INFO - __main__ -     Num examples = 6400
+01/25/2020 13:04:38 - INFO - __main__ -     Batch size = 8
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
