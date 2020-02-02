@@ -24,8 +24,8 @@ if __name__ == '__main__':
     data = pd.DataFrame(columns=attribute)
     data = data.append(new_df, sort=False) #允许某些attribute为空
 
-    file_path_review = 'data/' + args.file.replace('.json','') + '_Review.csv'
-    file_path_des = 'data/' + args.file.replace('.json','') + '_Des.csv'
+    file_path_review = args.file.replace('.json','') + '_Review.csv'
+    file_path_des = args.file.replace('.json','') + '_Des.csv'
     file_path = file_path_review if args.mode == 'review' else file_path_des
 
     data.to_csv(file_path, index=False)
